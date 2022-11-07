@@ -7,8 +7,6 @@ function App() {
         <div className="wrap">
             <ul className="menu">
                 <li><Link to="/">首页</Link></li>
-                <li><Link to="/login">登录管理</Link></li>
-                <li><Link to="/order">订单管理</Link></li>
                 <li><Link to="/user">用户管理</Link></li>
             </ul>
 
