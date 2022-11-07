@@ -1,6 +1,10 @@
 import {lazy, Suspense} from 'react';
 import {useRoutes} from 'react-router';
-import routes from './routes';
+import pageConfigs from './pages/page-configs';
+
+// 抓取到的页面路由
+const routes = pageConfigs.filter(({ path }) => !!path);
+
 
 export default function AppRouter() {
     const element = useRoutes([
